@@ -50,6 +50,25 @@ function searchTable() {
 
         row.classList.toggle('hide', tableData.indexOf(searchData) < 0);
         row.style.setProperty('--delay', i / 25 + 's');
+        row.querySelectorAll('td').forEach(cell => {
+            let cellContent = cell.textContent.toLowerCase();
+            let searchTerm = searchInput.value.toLowerCase();
+            let startIndex = cellContent.indexOf(searchTerm);
+
+
+            if (startIndex > -1) {
+                let endIndex = startIndex + searchTerm.length;
+                let highlighted = cellContent.substring(0, startIndex) +
+                    '<span class="highlight">' +
+                    cellContent.substring(startIndex, endIndex) +
+                    '</span>' +
+                    cellContent.substring(endIndex);
+
+                cell.innerHTML = highlighted;
+            } else {
+                cell.innerHTML = cellContent;
+            }
+        });
     });
 
     document.querySelectorAll('tbody tr:not(.hide)').forEach((visibleRow, i) => {

@@ -282,4 +282,7 @@ thead th.active,tbody td.active {
     border-radius: 8px;
 }
 
+.highlight {
+    background-color: deepskyblue;
+}
 
