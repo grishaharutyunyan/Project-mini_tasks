@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Users Information</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+<main class="table" id="products_table">
+    <section class="table__header">
+        <h1>Products</h1>
+        <button id="add-product-btn" onclick="openModal()">Add Product</button>
+        <select id="category-filter" onchange="filterByCategory(this.value)">
+            <option value="">Filter by category</option>
+            <option value="Home">Home</option>
+            <option value="Apparel">Apparel</option>
+            <option value="Electronics">Electronics</option>
+        </select>
+
+        <div class="input-group">
+            <input type="search" placeholder="Search ...">
+            <img src="images/search.png" alt="">
+        </div>
+    </section>
+
+    <section class="table__body">
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Category </th>
+                <th>Price</th>
+                <th>Tags</th>
+            </tr>
+            </thead>
+            <tbody id="product_table">
+            </tbody>
+        </table>
+    </section>
+</main>
+<div id="myModal" class="modal">
+    ...
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <form id="add-product-form">
+            <h1>Add Product </h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+            <label for="price">Price:</label>
+            <input type="text" id="price" name="price" required>
+            <label for="tags">Tags:</label>
+            <input type="text" id="tags" name="tags" required>
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+    ...
+</div>
+<script src="script.js"></script>
+</body>
+</html>
