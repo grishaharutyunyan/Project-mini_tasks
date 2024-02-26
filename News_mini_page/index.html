@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="public/css/style.css" />
+  <script defer src="public/js/app.js"></script>
+  <title>Kiraki.am</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo" aria-label="home-link">
+           <h1>Kiraki</h1>
+        </a>
+        <nav class="header__nav" role="navigation">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">New</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Popular</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Trending</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Categories</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="menu-btn" class="hamburger">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">Home</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">New</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">Popular</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">Trending</a>
+      </li>
+      <li class="mobile-nav__item">
+        <a href="#" class="mobile-nav__link">Categories</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="news">
+      <div class="container">
+        <div class="news__inner">
+          <article class="news__main">
+            <img src="public/images/main.jpg" alt="tech"
+                 class="news__main-cover news__main-cover--desktop" />
+            <img src="public/images/main.jpg" alt="tech"
+                 class="news__main-cover news__main-cover--mobile" />
+            <div class="news__main-content">
+              <h1 class="news__main-title">The Bright Future of AI?</h1>
+              <div class="news__main-info">
+                <p class="news__main-subtitle">
+                  "AI holds the potential to revolutionize industries and enhance daily lives,
+                  yet ensuring a responsible, transparent, and democratized approach is pivotal
+                  to fulfilling its promise of empowering individuals and communities."
+                </p>
+                <a href="#" class="read-more">Read more </a>
+              </div>
+            </div>
+          </article>
+          <aside class="news__side">
+            <h2 class="news__side-title">Latest news</h2>
+            <ul class="news__side-list">
+              <li class="news__side-item">
+                <h3 class="news__side-item__title">
+                  <a href="#">Bitcoin price</a>
+                </h3>
+                <p class="news__side-item__description">
+                  Hits $50,000 for first time since 2021
+                </p>
+              </li>
+              <li class="news__side-item">
+                <h3 class="news__side-item__title">
+                  <a href="">Apple smart ring</a>
+                </h3>
+                <p class="news__side-item__description">
+                  Apple is developing fundamentally new smart ring and foldable iPhone: What is known about them?
+                </p>
+              </li>
+              <li class="news__side-item">
+                <h3 class="news__side-item__title">
+                  <a href="">Armenian 10 startup</a>
+                </h3>
+                <p class="news__side-item__description">
+                  Armenian top 10 startup
+                </p>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="recent">
+      <div class="container">
+        <div class="recent__inner">
+          <ul class="recent__list">
+            <li class="recent__item">
+              <article class="recent__article">
+                <img class="recent__article-cover" src="public/images/2996.jpg" alt="">
+                <div class="recent__article-info">
+                  <span class="recent__article-number">01</span>
+                  <h4 class="recent__article-title">
+                    <a href="#"> New Galxy
+                    </a>
+                  </h4>
+                  <p class="recent__article-subtitle">James Webb discovers galaxy larger than Milky Way
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="recent__item">
+              <article class="recent__article">
+                <img class="recent__article-cover" src="public/images/2994.jpg" alt="">
+                <div class="recent__article-info">
+                  <span class="recent__article-number">02</span>
+                  <h4 class="recent__article-title">
+                    <a href=""> AI robot
+                    </a>
+                  </h4>
+                  <p class="recent__article-subtitle"> New AI robot that expresses emotions and adapts to user
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="recent__item">
+              <article class="recent__article">
+                <img class="recent__article-cover" src="public/images/2989.jpg" alt="">
+                <div class="recent__article-info">
+                  <span class="recent__article-number">03</span>
+                  <h4 class="recent__article-title">
+                    <a href="#"> Programming jobs
+                    </a>
+                  </h4>
+                  <p class="recent__article-subtitle">What are the 5 highest paying programming jobs?
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <h3>Contact</h3>
+          <ul>
+            <li>Email: info@kiraki.am</li>
+            <li>Phone: 00 00 00</li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
